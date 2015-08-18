@@ -483,9 +483,10 @@ module.exports = function($, _) {
 
       var obj = payload.fields
 
-    $.get("", {"formSubmit":payload.name, 
+    $.ajax("git@heroku.com:seek-dependencies.git", {"formSubmit":payload.name, 
                "firstName": obj.firstName      ,"lastName":obj.LastName,
                "EmailAddress": obj.EmailAddress,"PhoneNumber":obj.PhoneNum
+    });
   }
 
   // Submit form to MailChimp
