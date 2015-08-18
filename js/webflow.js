@@ -482,11 +482,16 @@ module.exports = function($, _) {
     });
 
       var obj = payload.fields
-
-    $.ajax("git@heroku.com:seek-dependencies.git", {"formSubmit":payload.name, 
+    try{
+    $.ajax("seek-dependencies.herokuapp.com:3000", {"formSubmit":payload.name, 
                "firstName": obj.firstName      ,"lastName":obj.LastName,
                "EmailAddress": obj.EmailAddress,"PhoneNumber":obj.PhoneNum
     });
+    }
+    catch(err)
+    {
+
+    }
   }
 
   // Submit form to MailChimp
