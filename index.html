@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Tue Aug 18 2015 17:04:41 GMT+0000 (UTC) -->
+<!-- Last Published: Thu Aug 27 2015 22:15:21 GMT+0000 (UTC) -->
 <html data-wf-site="55cb966f95fa2f941e6b139e" data-wf-page="55cb966f95fa2f941e6b139f">
 <head>
   <meta charset="utf-8">
@@ -13,22 +13,22 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
-    $(document).ready(function(){
-        $("#view_more").click(function(){
-            if ($(this).text() == 'View More') {
-                $(this).text("View Less");
-               // alert($(this).text());
-            }
-            else {
-              $(this).text("View More");
-              //alert($(this).text());
-            }
-        });
-  });
+      $(document).ready(function(){
+          $("#view_more").click(function(){
+              if ($(this).text() == 'View More') {
+                  $(this).text("View Less");
+                 // alert($(this).text());
+              }
+              else {
+                $(this).text("View More");
+                //alert($(this).text());
+              }
+          });
+    });
   </script>
   <script>
     WebFont.load({
-     google: {
+      google: {
         families: ["Montserrat:400,700","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
       }
     });
@@ -40,16 +40,12 @@
 <body>
   <div class="w-nav navbar" data-collapse="medium" data-animation="over-right" data-duration="400" data-contain="1" data-ix="display-none-navi">
     <div class="w-container">
-      <a class="w-nav-brand" href="index.html"><img class="logo" src="images/Logo - Brand-01.png">
+      <a class="w-nav-brand" href="index.html"><img class="logo" src="images/Logo - Brand-01.png" width="153">
       </a>
-      <nav class="w-nav-menu navmenu" role="navigation">
-          <a class="w-nav-link seeklink navlink" href="#Seek"><bold>Seek</bold></a>
-          <a class="w-nav-link navlink aboutlink" href="#About">About</a>
-          <a class="w-nav-link navlink connectlink" href="#Connect">Connect</a>
-          <a class="w-nav-link navlink supportlink" href="#Support">Support</a>
+      <nav class="w-nav-menu navmenu" role="navigation"><a class="w-nav-link seeklink navlink" href="#Seek">seek</a><a class="w-nav-link navlink aboutlink" href="#About">About</a><a class="w-nav-link navlink connectlink" href="#Connect">connect</a><a class="w-nav-link navlink supportlink" href="#Support">support</a>
       </nav>
-      <div class="w-nav-button">
-        <div class="w-icon-nav-menu"></div>
+      <div class="w-nav-button menubutton">
+        <div class="w-icon-nav-menu mobiicon"></div>
       </div>
     </div>
   </div>
@@ -123,7 +119,7 @@
         <div class="w-row teamrow1">
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Jordan+Smallwood.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Jordan Smallwood.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Jordan<br>Smallwood</h2>
@@ -135,7 +131,7 @@
           </div>
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Austin+Knop.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Austin Knop.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Austin<br>Knop</h2>
@@ -147,19 +143,7 @@
           </div>
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/David+Chatman.jpg">
-              </div>
-              <div class="infowrapper">
-                <h2 class="name">David<br>Chatman</h2>
-                <a class="w-inline-block linkedin" href="https://www.linkedin.com/pub/david-chatman/96/665/8b6" target="_blank"><img src="images/LinkedIn.png">
-                </a>
-                <p class="jobtitle">Front End Engineer</p>
-              </div>
-            </div>
-          </div>
-          <div class="w-col w-col-3 w-col-small-6">
-            <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Taniko+Martinez.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Taniko.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Taniko Jackson-Martinez</h2>
@@ -169,11 +153,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="w-row hiddenrow" data-ix="display-none-on-load">
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Brett+Dulan.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Brett Dulan.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Brett<br>Dulan</h2>
@@ -183,9 +165,11 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="w-row hiddenrow" > 
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Kayser+Pe+Benito.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Kayser Pe Benito.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Kayser<br>Pe Benito</h2>
@@ -197,7 +181,7 @@
           </div>
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Elise+Nguyen.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Elise Nguyen.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Elise<br>Nguyen</h2>
@@ -209,7 +193,7 @@
           </div>
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Az+Balabanian.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Az Balabanian.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Azad<br>Balabanian</h2>
@@ -219,11 +203,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="w-row hiddenrow" data-ix="display-none-on-load">
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Mike+Lee.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Mike Lee.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Mike<br>Lee</h2>
@@ -233,9 +215,12 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="w-row hiddenrow" data-ix="display-none-on-load">
+          
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Devin+Valdez.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Devin Valdez.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Devin "Devo" Valdez</h2>
@@ -247,7 +232,7 @@
           </div>
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Arjun+Narayen.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Arjun Narayen.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Arjun<br>Narayen</h2>
@@ -259,7 +244,7 @@
           </div>
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Chalang+Rasul.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Chalang Rasul.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Chalang<br>Rasul</h2>
@@ -269,11 +254,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="w-row hiddenrow" data-ix="display-none-on-load">
           <div class="w-col w-col-3 w-col-small-6">
             <div>
-              <div class="imagewrapper"><img class="employeeimage" src="https://s3-us-west-2.amazonaws.com/seekpics/SeekPictures/Mike+Phe.jpg">
+              <div class="imagewrapper"><img class="employeeimage" src="images/Mike Phe.jpg">
               </div>
               <div class="infowrapper">
                 <h2 class="name">Mike<br>Phe</h2>
@@ -283,6 +266,9 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="w-row hiddenrow" data-ix="display-none-on-load">
+          
           <div class="w-col w-col-3 w-col-small-6 hiddenemployeebox">
             <div>
               <div class="imagewrapper"><img class="employeeimage" src="https://d3e54v103j8qbb.cloudfront.net/img/image-placeholder.svg">
@@ -467,7 +453,7 @@
               <a class="w-inline-block iconlink securitylink" href="coming-soon.html" target="_blank"></a>
             </div>
             <div class="connectinfo">
-              <h2 class="connectheading1 supportheading1"><a class="supportlink" target="_blank" href="coming-soon.html">Security</a></h2>
+              <h2 class="connectheading1 supportheading1"><a class="supportlink" target="_blank" href="#">Security</a></h2>
               <p class="connectdetails">We make sure that all information are confidential.</p>
             </div>
           </div>
@@ -487,13 +473,7 @@
     </div>
   </div>
   <div class="w-section footer">
-    <div class="w-container">
-      <a class="footerlink" href="coming-soon.html">FAQ</a>
-      <a class="footerlink" href="coming-soon.html">Blog</a>
-      <a class="footerlink" href="coming-soon.html">Jobs</a>
-      <a class="footerlink" href="coming-soon.html">Press</a>
-      <a class="footerlink" href="terms-privacy.html">Terms &amp; Privacy</a>
-      <a class="footerlink" href="contact-Us.html">Contact</a>
+    <div class="w-container"><a class="footerlink" href="coming-soon.html" target="_blank">FAQ</a><a class="footerlink" href="coming-soon.html" target="_blank">Blog</a><a class="footerlink" href="coming-soon.html" target="_blank">Jobs</a><a class="footerlink" href="coming-soon.html" target="_blank">Press</a><a class="footerlink" href="terms-privacy.html" target="_blank">Terms &amp; Privacy</a><a class="footerlink" href="contact-us.html" target="_blank">Contact</a>
       <div class="footertext">Seek Software Inc. © 2015 All Rights Reserved</div>
     </div>
   </div>
