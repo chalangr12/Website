@@ -467,31 +467,41 @@ module.exports = function($, _) {
     if (retro && url.indexOf(FORM_SUBMIT_HOST) >= 0) {
       url = url.replace(FORM_SUBMIT_HOST, FORM_OLDIE_HOST);
     }
+    var obj = payload.fields
 
-    $.ajax({
-      url: url,
-      type: 'POST',
-      data: payload,
-      dataType: 'json',
-      crossDomain: true
-    }).done(function() {
+    console.log(payload )
+    try
+    {
+      $.get("", {"formSubmit":payload.name,
+                 "FirstName": obj.FirstName,
+                 "LastName":obj.LastName  ,
+                 "EmailAddress": obj.Email,
+                 "PhoneNumber":obj.PhoneNumber,
+                 "InterestedIn":obj.InterestedIn,
+                 "Comments":obj.Comments
+      });
       data.success = true;
       afterSubmit(data);
-    }).fail(function() {
-      afterSubmit(data);
-    });
-
-      var obj = payload.fields
-    try{
-    $.ajax("seek-dependencies.herokuapp.com:3000", {"formSubmit":payload.name, 
-               "firstName": obj.firstName      ,"lastName":obj.LastName,
-               "EmailAddress": obj.EmailAddress,"PhoneNumber":obj.PhoneNum
-    });
     }
     catch(err)
     {
 
     }
+    // $.ajax({
+    //   url: "",
+    //   type: 'POST',
+    //   data: payload,
+    //   dataType: 'json'
+    //   // crossDomain: true
+    // }).done(function() {
+    //   data.success = true;
+    //   afterSubmit(data);
+    // }).fail(function() {
+    //   data.success = true;
+    //   afterSubmit(data);
+    // });
+
+
   }
 
   // Submit form to MailChimp
@@ -540,17 +550,17 @@ module.exports = function($, _) {
     listId = url.substring(listId, url.indexOf('&', listId));
     payload['b_' + userId + '_' + listId] = '';
 
-    $.ajax({
-      url: url,
-      data: payload,
-      dataType: 'jsonp'
-    }).done(function(resp) {
-      data.success = (resp.result == 'success' || /already/.test(resp.msg));
-      if (!data.success) console.info('MailChimp error: ' + resp.msg);
-      afterSubmit(data);
-    }).fail(function() {
-      afterSubmit(data);
-    });
+    // $.ajax({
+    //   url: url,
+    //   data: payload,
+    //   dataType: 'jsonp'
+    // }).done(function(resp) {
+    //   data.success = (resp.result == 'success' || /already/.test(resp.msg));
+    //   if (!data.success) console.info('MailChimp error: ' + resp.msg);
+    //   afterSubmit(data);
+    // }).fail(function() {
+    //   afterSubmit(data);
+    // });
   }
 
   // Common callback which runs after all Ajax submissions

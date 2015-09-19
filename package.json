@@ -1,0 +1,31 @@
+{
+  "name": "seek-health.us",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies":{
+  "http-server":"^0.6.1",
+  "nodemailer":"~0.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chalangr12/Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chalangr12/Website/issues"
+  },
+  "scripts":{
+   
+  "prestart":"npm install",
+  "start": "http-server -a 0.0.0.0 -p 8000",
+
+  "pretest":"npm install"
+
+
+  }
+}
