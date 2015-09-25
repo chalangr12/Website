@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ec2-user/node-v4.0.0-linux-x64/bin/node',
+1 verbose cli   '/home/ec2-user/node-v4.0.0-linux-x64/bin/npm',
+1 verbose cli   'restart' ]
+2 info using npm@2.14.2
+3 info using node@v4.0.0
+4 verbose run-script [ 'prerestart',
+4 verbose run-script   'prestop',
+4 verbose run-script   'stop',
+4 verbose run-script   'poststop',
+4 verbose run-script   'restart',
+4 verbose run-script   'prestart',
+4 verbose run-script   'start',
+4 verbose run-script   'poststart',
+4 verbose run-script   'postrestart' ]
+5 info prerestart petabyte_recyclers@1.0.0
+6 info prestop petabyte_recyclers@1.0.0
+7 info stop petabyte_recyclers@1.0.0
+8 info poststop petabyte_recyclers@1.0.0
+9 info restart petabyte_recyclers@1.0.0
+10 info prestart petabyte_recyclers@1.0.0
+11 verbose unsafe-perm in lifecycle true
+12 info start petabyte_recyclers@1.0.0
+13 verbose unsafe-perm in lifecycle true
+14 info petabyte_recyclers@1.0.0 Failed to exec start script
+15 verbose stack Error: petabyte_recyclers@1.0.0 start: `http-server -a 0.0.0.0 -p 8000 `
+15 verbose stack spawn ENOENT
+15 verbose stack     at ChildProcess.<anonymous> (/home/ec2-user/node-v4.0.0-linux-x64/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+15 verbose stack     at emitTwo (events.js:87:13)
+15 verbose stack     at ChildProcess.emit (events.js:172:7)
+15 verbose stack     at maybeClose (internal/child_process.js:817:16)
+15 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+16 verbose pkgid petabyte_recyclers@1.0.0
+17 verbose cwd /home/ec2-user/Website
+18 error Linux 3.14.48-33.39.amzn1.x86_64
+19 error argv "/home/ec2-user/node-v4.0.0-linux-x64/bin/node" "/home/ec2-user/node-v4.0.0-linux-x64/bin/npm" "restart"
+20 error node v4.0.0
+21 error npm  v2.14.2
+22 error file sh
+23 error code ELIFECYCLE
+24 error errno ENOENT
+25 error syscall spawn
+26 error petabyte_recyclers@1.0.0 start: `http-server -a 0.0.0.0 -p 8000 `
+26 error spawn ENOENT
+27 error Failed at the petabyte_recyclers@1.0.0 start script 'http-server -a 0.0.0.0 -p 8000 '.
+27 error This is most likely a problem with the petabyte_recyclers package,
+27 error not with npm itself.
+27 error Tell the author that this fails on your system:
+27 error     http-server -a 0.0.0.0 -p 8000
+27 error You can get their info via:
+27 error     npm owner ls petabyte_recyclers
+27 error There is likely additional logging output above.
+28 verbose exit [ 1, true ]

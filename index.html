@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Thu Aug 27 2015 22:15:21 GMT+0000 (UTC) -->
+<html data-wf-site="55cb966f95fa2f941e6b139e" data-wf-page="55cb966f95fa2f941e6b139f">
+<head>
+  <meta charset="utf-8">
+  <title>seek-health</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/seek-health.webflow.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+          $("#view_more").click(function(){
+              if ($(this).text() == 'View More') {
+                  $(this).text("View Less");
+                 // alert($(this).text());
+              }
+              else {
+                $(this).text("View More");
+                //alert($(this).text());
+              }
+          });
+    });
+  </script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700","Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon-01.png">
+  <link rel="apple-touch-icon" href="images/Webclip-01.png">
+</head>
+<body>
+  <div class="w-nav navbar" data-collapse="medium" data-animation="over-right" data-duration="400" data-contain="1" data-ix="display-none-navi">
+    <div class="w-container">
+      <a class="w-nav-brand" href="index.html"><img class="logo" src="images/Logo - Brand-01.png" width="153">
+      </a>
+      <nav class="w-nav-menu navmenu" role="navigation"><a class="w-nav-link seeklink navlink" href="#Seek">seek</a><a class="w-nav-link navlink aboutlink" href="#About">About</a><a class="w-nav-link navlink connectlink" href="#Connect">connect</a><a class="w-nav-link navlink supportlink" href="#Support">support</a>
+      </nav>
+      <div class="w-nav-button menubutton">
+        <div class="w-icon-nav-menu mobiicon"></div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section herosection" id="Top">
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <h1 class="heroheader">Hello, we are Seek.</h1>
+          <h2 class="heroheader2">Our mission is to enhance global wellness for everyone</h2><a class="button" href="#Seek">Learn More</a>
+        </div>
+        <div class="w-col w-col-6"></div>
+      </div>
+    </div>
+  </div>
+  <div class="seek" id="Seek" data-ix="navi-appearance">
+    <div class="w-section seeksection ourproductsection">
+      <div class="w-container">
+        <div class="w-row">
+          <div class="w-col w-col-6">
+            <h1 class="seekheader1">Our Product</h1>
+            <p class="seekparagraph">We built our product for those who are constantly seeking - ways to improve their own health, the health of others, and opportunities to evolve the connection between these seekers and the entities that support them.</p>
+          </div>
+          <div class="w-col w-col-6"><img class="ourproductimage" src="images/OurProduct.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-section seeksection forindividualssec">
+      <div class="w-container">
+        <div class="w-row">
+          <div class="w-col w-col-6"></div>
+          <div class="w-col w-col-6">
+            <h1 class="seekheader1">for&nbsp;Individuals</h1>
+            <p class="seekparagraph forindivpara">Your health should only be controlled by one person - you.
+              <a class="seektextlinks" target="_blank" href="coming-soon.html"></a><a xmlns="http://www.w3.org/1999/xhtml" class="seektextlinks" target="_blank" href="coming-soon.html">Download</a>&nbsp;our app to manage your fitness, learn about your symptoms, be seen by a doctor, and much more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-section seeksection forhospitals">
+      <div class="w-container">
+        <div class="w-row">
+          <div class="w-col w-col-6">
+            <h1 class="seekheader1">For Hospitals</h1>
+            <p class="seekparagraph">Seek combines healthcare information and management, electronic health records, and hospital management on a single, end to end, world class platform. <a class="seektextlinks" target="_blank" href="contact-us.html">Contact us</a> to learn more.</p>
+          </div>
+          <div class="w-col w-col-6"><img class="forhospitalsimage" src="images/ForHospitals.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-section seeksection forpharmsection">
+      <div class="w-container">
+        <div class="w-row">
+          <div class="w-col w-col-6"></div>
+          <div class="w-col w-col-6">
+            <h1 class="seekheader1">For Pharmaceuticals</h1>
+            <p class="seekparagraph forpharmtext">Our pharmaceutical platform will allow your organization to streamline the development process of your medication from research all the way to sales. <a class="seektextlinks" target="_blank" href="contact-us.html">Contact us</a> to learn more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section about" id="About">
+    <div class="w-container">
+      <h1 class="aboutheading">We are seek</h1>
+      <p class="aboutparagraph">We are a team of passionate and collaborative forward thinkers who are geared towards improving the future of healthcare. We are focusing on evolving the relationship between humanity and the understanding of health. Our software platform will revolutionize the way people care for themselves and others.</p>
+    </div>
+    <div class="team">
+      <div class="w-container">
+        <div class="w-row teamrow1">
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Jordan Smallwood.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Jordan<br>Smallwood</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/pub/jordan-smallwood/26/aa8/413" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Founder/CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Austin Knop.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Austin<br>Knop</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/pub/austin-knop/92/aa1/a11" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Co-Founder/Creative Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Brett Dulan.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Brett<br>Dulan</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/pub/brett-dulan/52/442/15a" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Engineering Lead</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Kayser Pe Benito.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Kayser<br>Pe Benito</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/in/kayserpebebenito" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Design Lead</p>
+              </div>
+            </div>
+        </div>
+        <div class="w-row hiddenrow" > 
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Elise Nguyen.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Elise<br>Nguyen</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/in/elisetnguyen" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">UI/UX Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Az Balabanian.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Azad<br>Balabanian</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/in/azadbalabanian" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Product Manager – Provider Portal</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Mike Lee.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Mike<br>Lee</h2>
+                <a class="w-inline-block linkedin" href="http://linkedin.com/in/mejle12" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Chief of Staff</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Devin Valdez.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Devin "Devo" Valdez</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/in/devinvaldez" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">IT Lead</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-row hiddenrow" data-ix="display-none-on-load">
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Arjun Narayen.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Arjun<br>Narayen</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/pub/arjun-narayen/92/aa8/8a8" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Product Manager - Profile</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Chalang Rasul.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Chalang<br>Rasul</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/pub/chalang-rasul/4a/410/84" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Front End Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/Mike Phe.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Mike<br>Phe</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/in/mikephe" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Full Stack Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/sue_mcfarlane.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Sue<br>McFarlane</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/in/sueblue1965" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Clinical Advisor - Hospitals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-row hiddenrow" data-ix="display-none-on-load">
+           
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/tameiElliott.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Tamei<br>Elliott</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/profile/view?id=AAkAAA5wehABcOrhhxJWUUCkmhuwE2pyX5DBup0" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Clinical Advisor - Biotechnology</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/MarlonSmith.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Marlon<br>Smith</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/profile/view?id=ADEAAAjAIYwB8Oqx26H887n4SB-PaviSFHA042I" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Front End Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-col w-col-3 w-col-small-6">
+            <div>
+              <div class="imagewrapper"><img class="employeeimage" src="images/chrisFaulkner.jpg">
+              </div>
+              <div class="infowrapper">
+                <h2 class="name">Chris<br>Faulkner</h2>
+                <a class="w-inline-block linkedin" href="https://www.linkedin.com/profile/view?id=AAkAAAH-yVIB2wLgq0AagFO6CcuJF05KCfF2HFM" target="_blank"><img src="images/LinkedIn.png">
+                </a>
+                <p class="jobtitle">Finance/Operations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divbutton"><a class="button teambutton" id ="view_more" href="#" data-ix="view-more-button">View More</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-container missionstatement">
+      <h1 class="aboutheading">Our Mission Statement</h1>
+      <p class="aboutparagraph">To evolve the relationship between humanity and the understanding of health. Seek will revolutionize the way people care for themselves and others. Our mission is to enhance global wellness for everyone.</p>
+    </div>
+    <div>
+      <div class="w-container">
+        <div class="w-row missionrow">
+          <div class="w-col w-col-6 w-col-small-6">
+            <h1 class="aboutheading1">Humans + Health</h1>
+          </div>
+          <div class="w-col w-col-6 w-col-small-6">
+            <p class="aboutparagraph1">Your health is important to you and it is equally important to us. Manage it on your terms - from the hospital you choose, to the food you eat.&nbsp;
+              <br>
+              <br><a class="abouttextlinks" target="_blank" href="seek-your-health.html">Seek your health - absolutely free. </a>
+              <br>[Options for desktop, mobile, and tablet]</p>
+          </div>
+        </div>
+        <div class="w-row missionrow">
+          <div class="w-col w-col-6 w-col-small-6">
+            <h1 class="aboutheading1">Evolved Self Care</h1>
+          </div>
+          <div class="w-col w-col-6 w-col-small-6">
+            <p class="aboutparagraph1">Your body is a beautiful machine. Seek can help you:
+              <br>+ Choose a hospital
+              <br>+ Manage your diet
+              <br>+ Manage your fitness
+              <br>+ Check your test results
+              <br>+ and much more. All on YOUR terms.</p>
+          </div>
+        </div>
+        <div class="w-row missionrow">
+          <div class="w-col w-col-6 w-col-small-6">
+            <h1 class="aboutheading1">Evolved Patient Care</h1>
+          </div>
+          <div class="w-col w-col-6 w-col-small-6">
+            <p class="aboutparagraph1">Build your partnership with your patient - one connection at a time. Inform, Care For, and Get to Know your patient as you walk them through their health journey.
+              <br>
+              <br><a class="abouttextlinks" target="_blank" href="learn-more-evolved-patient-care.html">Learn more.</a>
+            </p>
+          </div>
+        </div>
+        <div class="w-row missionrow">
+          <div class="w-col w-col-6 w-col-small-6">
+            <h1 class="aboutheading1">From Providers to People</h1>
+          </div>
+          <div class="w-col w-col-6 w-col-small-6">
+            <p class="aboutparagraph1">Connection is Key: Health Care Providers, Health Care Tools, and Patients all work together in harmony to elevate the overall health of humanity.</p>
+            <a class="w-lightbox w-inline-block diagram-31" href="#"><img class="diagramimage" src="images/Diagram.png">
+              <script type="application/json" class="w-json">
+                { "items": [{
+                  "url": "images/SeekDiagram2.jpg",
+                  "fileName": "55cd54edf6c34ae318284566_SeekDiagram2.jpg",
+                  "origFileName": "SeekDiagram2.jpg",
+                  "width": 950,
+                  "height": 961,
+                  "size": 379828,
+                  "type": "image"
+                }] }
+              </script>
+            </a>
+          </div>
+        </div>
+        <div class="w-row missionrow">
+          <div class="w-col w-col-6 w-col-small-6">
+            <h1 class="aboutheading1">Democratized Healthcare</h1>
+          </div>
+          <div class="w-col w-col-6 w-col-small-6">
+            <p class="aboutparagraph1">Seek takes healthcare and provides a platform for care providers, devices, patients, and everything in between to elevate the standard of care.
+              <a class="abouttextlinks" href="#"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section connect" id="Connect">
+    <div class="w-container">
+      <h1 class="connectheading">connect with us</h1>
+      <p class="connectparagraph">Seek was built with connecting as the core foundation and motivation for our product. Here are some ways you can connect with us!</p>
+      <div class="w-row connectrow">
+        <div class="w-col w-col-4 w-col-stack">
+          <div>
+            <div class="connecticon">
+              <a class="w-inline-block iconlink bloglink" href="coming-soon.html" target="_blank"></a>
+            </div>
+            <div class="connectinfo">
+              <h2 class="connectheading1"><a class="connectlink" target="_blank" href="#">Blog</a></h2>
+              <p class="connectdetails">Follow our blog for daily news and updates about Seek.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-4 w-col-stack">
+          <div>
+            <div class="connecticon">
+              <a class="w-inline-block iconlink communitylink" href="coming-soon.html" target="_blank"></a>
+            </div>
+            <div class="connectinfo">
+              <h2 class="connectheading1"><a class="connectlink" target="_blank" href="#">Community</a></h2>
+              <p class="connectdetails">Interact with Seek’s community.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-4 w-col-stack">
+          <div>
+            <div class="connecticon">
+              <a class="w-inline-block iconlink apilink" href="coming-soon.html" target="_blank"></a>
+            </div>
+            <div class="connectinfo">
+              <h2 class="connectheading1"><a class="connectlink" target="_blank" href="#">API</a></h2>
+              <p class="connectdetails">Developers unite!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section support" id="Support">
+    <div class="w-container supportcontainer">
+      <h1 class="connectheading supportheading">Support</h1>
+      <p class="connectparagraph">Need more information about something? Here are some ways to find the help you need!</p>
+      <div class="w-row connectrow supportrow">
+        <div class="w-col w-col-3 w-col-stack">
+          <div>
+            <div class="connecticon">
+              <a class="w-inline-block iconlink helplink" href="contact-us.html" target="_blank"></a>
+            </div>
+            <div class="connectinfo">
+              <h2 class="connectheading1 supportheading1"><a class="supportlink" target="_blank" href="contact-us.html">Need Help?</a></h2>
+              <p class="connectdetails">Ask away!</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-3 w-col-stack">
+          <div>
+            <div class="connecticon">
+              <a class="w-inline-block iconlink termsprivacylink" href="terms-privacy.html" target="_blank"></a>
+            </div>
+            <div class="connectinfo">
+              <h2 class="connectheading1 supportheading1"><a class="supportlink" target="_blank" href="terms-privacy.html">Terms/Privacy</a></h2>
+              <p class="connectdetails">Please read carefully.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-3 w-col-stack">
+          <div>
+            <div class="connecticon">
+              <a class="w-inline-block iconlink securitylink" href="coming-soon.html" target="_blank"></a>
+            </div>
+            <div class="connectinfo">
+              <h2 class="connectheading1 supportheading1"><a class="supportlink" target="_blank" href="#">Security</a></h2>
+              <p class="connectdetails">We make sure that all information are confidential.</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-col w-col-3 w-col-stack">
+          <div>
+            <div class="connecticon">
+              <a class="w-inline-block iconlink contactuslink" href="contact-us.html" target="_blank"></a>
+            </div>
+            <div class="connectinfo">
+              <h2 class="connectheading1 supportheading1"><a class="supportlink" target="_blank" href="contact-us.html">Contact Us</a></h2>
+              <p class="connectdetails">If you have any comments, or concerns, please contact us.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-section footer">
+    <div class="w-container"><a class="footerlink" href="coming-soon.html" target="_blank">FAQ</a><a class="footerlink" href="coming-soon.html" target="_blank">Blog</a><a class="footerlink" href="coming-soon.html" target="_blank">Jobs</a><a class="footerlink" href="coming-soon.html" target="_blank">Press</a><a class="footerlink" href="terms-privacy.html" target="_blank">Terms &amp; Privacy</a><a class="footerlink" href="contact-us.html" target="_blank">Contact</a>
+      <div class="footertext">Seek Software Inc. © 2015 All Rights Reserved</div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+</body>
+</html>
